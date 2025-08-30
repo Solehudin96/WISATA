@@ -11,10 +11,7 @@ class Galeri extends Model
 
     protected $table = 'galeri';
 
-    /**
-     * Semua kolom bisa diisi (mass assignment) 
-     * kecuali yang ada di $guarded
-     */
+
     protected $guarded = [];
 
    
