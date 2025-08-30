@@ -126,6 +126,16 @@
           <li class="nav-item"><a class="nav-link" href="#gallery">Galeri</a></li>
           <li class="nav-item"><a class="nav-link" href="#lokasi">Lokasi</a></li>
           <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+            @if (Route::has('login'))
+              @auth
+                  <li class="nav-item"><a class="nav-link" href="{{ url('/home') }}">Dashboard</a></li>
+              @else
+                  <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
+                  @if (Route::has('register'))
+                      <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">Register</a></li>
+                  @endif
+              @endauth
+            @endif
         </ul>
       </div>
     </div>
@@ -310,40 +320,19 @@
     </div>
 
     <div class="row g-4">
-
-      <div class="col-md-4">
-        <a href="{{ asset('assets/img/a.jpg') }}" data-lightbox="gallery" class="d-block gallery-item">
-          <img src="{{ asset('assets/img/a.jpg') }}" alt="Galeri 1" class="img-fluid rounded-3 mb-3" />
-        </a>
-      </div>
-
-      <div class="col-md-4">
-        <a href="{{ asset('assets/img/g.png') }}" data-lightbox="gallery" class="d-block gallery-item">
-          <img src="{{ asset('assets/img/g.png') }}" alt="Galeri 2" class="img-fluid rounded-3 mb-3" />
-        </a>
-      </div>
-
-      <div class="col-md-4">
-        <a href="{{ asset('assets/img/e.jpg') }}" data-lightbox="gallery" class="d-block gallery-item">
-          <img src="{{ asset('assets/img/e.jpg') }}" alt="Galeri 3" class="img-fluid rounded-3 mb-3" />
-        </a>
-      </div>
-
-      <div class="col-md-4">
-        <a href="{{ asset('assets/img/f.jpg') }}" data-lightbox="gallery" class="d-block gallery-item">
-          <img src="{{ asset('assets/img/f.jpg') }}" alt="Galeri 4" class="img-fluid rounded-3 mb-3" />
-        </a>
-      </div>
-
-      <div class="col-md-4">
-        <a href="{{ asset('assets/img/vila.jpg') }}" data-lightbox="gallery" class="d-block gallery-item">
-          <img src="{{ asset('assets/img/vila.jpg') }}" alt="Galeri 5" class="img-fluid rounded-3 mb-3" />
-        </a>
-      </div>
-
+      @forelse($galeri as $item)
+        <div class="col-md-4">
+          <a href="{{ asset('storage/galeri/' . $item->gambar) }}" data-lightbox="gallery" class="d-block gallery-item">
+            <img src="{{ asset('storage/galeri/' . $item->gambar) }}" alt="{{ $item->nama }}" class="img-fluid rounded-3 mb-3" />
+          </a>
+        </div>
+      @empty
+        <p class="text-center">Belum ada data galeri.</p>
+      @endforelse
     </div>
   </div>
 </section>
+
 
   <!-- Gallery End -->
 
