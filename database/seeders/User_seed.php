@@ -17,7 +17,7 @@ class User_seed extends Seeder
             [
                 'name' => 'Administrator',
                 'email' => 'wisata@sindangpano.com',
-                'password' => Hash::make('1234567800')
+                'password' => Hash::make('12345678'),
             ]
         );
     }

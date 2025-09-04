@@ -44,7 +44,7 @@ class GaleriController extends Controller
     {
         $request->validate([
             'nama' => 'required|string|max:255',
-            'gambar' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'gambar' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:10000',
         ]);
 
         $filename = $request->file('gambar')->hashName();

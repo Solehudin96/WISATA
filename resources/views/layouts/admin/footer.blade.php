@@ -4,7 +4,7 @@
     Versi 1.0
 </div>
 <!-- Default to the left -->
-<strong>Copyright &copy; 2025-2026 <a href="#">Nikko Adrian</a>.</strong> All rights reserved.
+<strong>Copyright &copy; 2025-2026 <a href="#">Solehudin</a>.</strong> All rights reserved.
 </footer>
 </div>
 <!-- ./wrapper -->

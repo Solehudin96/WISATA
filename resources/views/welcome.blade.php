@@ -146,7 +146,7 @@
   <header id="home" class="position-relative">
     <div class="header-carousel owl-carousel">
       <div class="owl-carousel-item">
-        <img src="{{asset('assets/img/cipeundeuy.png')}}"  alt="Sungai Cipeundeuy Endah – Sindangpano" />
+        <img src="{{asset('assets/img/rombongan.jpg')}}"  alt="Sungai Cipeundeuy Endah – Sindangpano" />
         <div class="header-overlay"></div>
         <div class="hero-caption text-white">
           <div class="container">
@@ -160,7 +160,7 @@
         </div>
       </div>
       <div class="owl-carousel-item">
-        <img src="{{ asset('assets/img/foto_1.png') }}" alt="River Tubing Cipeudeuy Endah">
+        <img src="{{ asset('assets/img/foto2.jpg') }}" alt="River Tubing Cipeudeuy Endah">
         <div class="header-overlay"></div>
         <div class="hero-caption text-white">
           <div class="container">
@@ -186,7 +186,7 @@
           <p class="section-subtitle mb-4">Desa Sindangpano • Rajagaluh • Majalengka</p>
           <p>
             Cipeundeuy Endah adalah destinasi wisata sungai yang menawarkan arus tenang, air jernih, dan panorama pedesaan yang menenangkan. Dikelola oleh
-            <strong>Karang Taruna Desa Sindangpano</strong>, wisata ini menjadi pilihan favorit untuk <em>river tubing</em>, bermain air, dan bersantai di gazebo.
+            <strong>Karang Taruna Desa Sindangpano</strong>, wisata ini menjadi pilihan favorit untuk <em>river tubing</em>, bermain air, dan bersantai di gazebo. Dengan Rute sepanjang 500m
           </p>
           <div class="row g-3 mt-3">
             <div class="col-sm-6">
@@ -242,12 +242,12 @@
           <p class="small text-muted mb-0">Susur sungai dengan ban & pelampung, ditemani pemandu.</p>
         </div>
         <div class="attraction-item bg-white rounded-4 p-3 shadow-sm">
-        <img src="{{ asset('assets/img/a.jpg') }}" alt="Bermain Air Keluarga" class="rounded-3 mb-3">
+        <img src="{{ asset('assets/img/tubing.jpg') }}" alt="Bermain Air Keluarga" class="rounded-3 mb-3">
           <h6>Bermain Air Keluarga</h6>
           <p class="small text-muted mb-0">Area dangkal ramah anak untuk bermain air.</p>
         </div>
         <div class="attraction-item bg-white rounded-4 p-3 shadow-sm">
-        <img src="{{ asset('assets/img/vila.jpg') }}" alt="Gazebo & Piknik" class="rounded-3 mb-3">
+        <img src="{{ asset('assets/img/gajebo.jpg') }}" alt="Gazebo & Piknik" class="rounded-3 mb-3">
           <h6>Gazebo & Piknik</h6>
           <p class="small text-muted mb-0">Santai di gazebo sambil menikmati kuliner lokal.</p>
         </div>
@@ -285,7 +285,7 @@
           <div class="price-card p-4 h-100">
             <h5 class="mb-1">River Tubing</h5>
             <p class="text-muted small mb-3">Peralatan & pemandu disediakan</p>
-            <h3 class="text-primary mb-3">Rp35.000 <span class="text-muted fs-6">/orang</span></h3>
+            <h3 class="text-primary mb-3">Rp25.000 <span class="text-muted fs-6">/orang</span></h3>
             <ul class="small text-muted mb-4">
               <li>Ban, pelampung, helm</li>
               <li>Pemandu lokal</li>
@@ -319,17 +319,22 @@
       <p class="section-subtitle">Momen terbaik di Cipeudeuy Endah</p>
     </div>
 
-    <div class="row g-4">
-      @forelse($galeri as $item)
-        <div class="col-md-4">
-          <a href="{{ asset('storage/galeri/' . $item->gambar) }}" data-lightbox="gallery" class="d-block gallery-item">
-            <img src="{{ asset('storage/galeri/' . $item->gambar) }}" alt="{{ $item->nama }}" class="img-fluid rounded-3 mb-3" />
-          </a>
-        </div>
-      @empty
-        <p class="text-center">Belum ada data galeri.</p>
-      @endforelse
-    </div>
+  <div class="row g-4"> 
+    @forelse($galeri as $item)
+      <div class="col-md-4 text-center">
+        <a href="{{ asset('storage/galeri/' . $item->gambar) }}" data-lightbox="gallery" class="d-block gallery-item">
+          <img src="{{ asset('storage/galeri/' . $item->gambar) }}" alt="{{ $item->nama }}" class="img-fluid rounded-3 mb-2" />
+        </a>
+        <h6 class="fw-semibold">{{ $item->nama }}</h6>
+        @if(!empty($item->keterangan))
+          <p class="text-muted small">{{ $item->keterangan }}</p>
+        @endif
+      </div>
+    @empty
+      <p class="text-center">Belum ada data galeri.</p>
+    @endforelse
+  </div>
+
   </div>
 </section>
 
