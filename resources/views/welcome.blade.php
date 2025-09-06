@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>obyek Wisata Cipeundeuy Endah – Wisata Sungai Sindangpano, Rajagaluh, Majalengka</title>
+  <title> Cipeundeuy Endah Sindangpano </title>
+   <link rel="icon" type="image/png" href="assets/img/logo_desa.png">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Destinasi wisata alam Cipeudeuy Endah di Desa Sindangpano, Rajagaluh, Majalengka. Nikmati kejernihan sungai, river tubing, gazebo, dan suasana pedesaan yang asri." />
   <meta name="keywords" content="Cipeudeuy Endah, Sindangpano, Rajagaluh, Majalengka, wisata sungai, river tubing, desa wisata" />
@@ -179,7 +180,7 @@
     <div class="container">
       <div class="row g-5 align-items-center">
         <div class="col-lg-6">
-          <img class="img-fluid rounded-4 shadow" src="{{ asset('assets/img/spanduk.jpg') }}" alt="Tentang Cipeundeuy Endah" />
+          <img class="img-fluid rounded-4 shadow" src="{{ asset('assets/img/banner.jpg') }}" alt="Tentang Cipeundeuy Endah" />
         </div>
         <div class="col-lg-6">
           <h2 class="section-title mb-3">Tentang Cipeundeuy Endah</h2>
@@ -316,7 +317,7 @@
   <div class="container">
     <div class="text-center mb-5">
       <h2 class="section-title">Galeri</h2>
-      <p class="section-subtitle">Momen terbaik di Cipeudeuy Endah</p>
+      <p class="section-subtitle">Momen terbaik di Cipeundeuy Endah</p>
     </div>
 
   <div class="row g-4"> 
@@ -366,12 +367,12 @@
           <h3 class="mb-3">Kontak & Reservasi</h3>
           <p class="text-secondary mb-4">Dikelola oleh Karang Taruna Desa Sindangpano</p>
           <div class="d-flex align-items-start mb-2"><i class="bi bi-geo-alt text-primary me-3"></i><span>Desa Sindangpano, Rajagaluh, Majalengka</span></div>
-          <div class="d-flex align-items-start mb-2"><i class="bi bi-telephone text-primary me-3"></i><span>08xx-xxxx-xxxx (Pengelola)</span></div>
+          <div class="d-flex align-items-start mb-2"><i class="bi bi-telephone text-primary me-3"></i><span>0851-3500-1364 (Pengelola)</span></div>
           <div class="d-flex align-items-start mb-4"><i class="bi bi-envelope text-primary me-3"></i><span>info@cipeudeuyendah.id</span></div>
           <div class="d-flex gap-2 flex-wrap">
             <a class="btn btn-success" href="#"><i class="fab fa-whatsapp me-2"></i>WhatsApp</a>
-            <a class="btn btn-outline-light" href="#"><i class="bi bi-facebook me-2"></i>Facebook</a>
-            <a class="btn btn-outline-light" href="#"><i class="bi bi-instagram me-2"></i>Instagram</a>
+            <a class="btn btn-outline-light" href="https://web.facebook.com/cipeundeuy.endah"><i class="bi bi-facebook me-2"></i>Facebook</a>
+            <a class="btn btn-outline-light" href="https://www.instagram.com/cipeundeuyendah?igsh=NWl2dWJ1d3g2bGps"><i class="bi bi-instagram me-2"></i>Instagram</a>
           </div>
         </div>
           </div>
