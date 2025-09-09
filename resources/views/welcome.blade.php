@@ -253,7 +253,7 @@
             <p class="small text-muted mb-0">Santai di gazebo sambil menikmati kuliner lokal.</p>
           </div>
           <div class="attraction-item bg-white rounded-4 p-3 shadow-sm">
-          <img src="{{ asset('assets/img/mushola.jpg') }}" alt="Spot Foto" class="rounded-3 mb-3">
+          <img src="{{ asset('assets/img/mushola_wisata.jpg') }}" alt="Spot Foto" class="rounded-3 mb-3">
             <h6>Tempat Ibadah<h6>
             <p class="small text-muted mb-0">Tersedia Mushola umum untuk pengunjung wisata.</p>
           </div>
